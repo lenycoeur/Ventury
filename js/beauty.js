@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded' , function () {
      });
 } );
 
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
     gsap.utils.toArray('.scroll').forEach(function (element) {
         gsap.from(element, {
             opacity: 0,
@@ -44,4 +44,4 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-});
+});*/
