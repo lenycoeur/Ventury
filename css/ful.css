@@ -1,0 +1,70 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+
+.navbar{
+    border-bottom: 1px solid rgba(33, 32, 32, 0.129) !important;
+}
+.navbar-toggler {
+    outline-width: 0 !important; 
+    box-shadow: none !important;
+}
+
+
+.anim-nav {
+   background-color: rgba(255, 255, 255, 0.514);
+}
+
+
+
+
+
+/*
+.scroll{
+    opacity: 0 !important;
+    transform: translateY(40px) !important;
+  }
+  
+  
+  .scroll.scroll-visible{
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+    transition: 1.3s cubic-bezier(.5, 0, 0, 1) !important;
+  }
+*/
+
+
+
+img{
+ 
+    transition: 0.7s ease;
+}
+
+img:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+   
+}
+
+.img-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+.hidden-text {
+    margin: 0;
+}

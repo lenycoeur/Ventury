@@ -1,0 +1,73 @@
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+.navbar{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.129) !important;
+}
+
+.borderCustom{
+    border-right: 1px solid rgba(255, 255, 255, 0.129) !important;
+}
+
+.bord{
+    border-left: 1px solid  rgba(255, 255, 255, 0.129) !important;
+}
+
+.border-custom {
+    border-top: 1px solid rgba(255, 255, 255, 0.129) !important;
+}
+
+.borderBtn{
+    border: 1px solid rgba(255, 255, 255, 0.129) !important;
+}
+
+.marginButtonCustom{
+    margin-left: 13rem !important;
+    margin-right: 13rem !important;
+}
+
+.side:not(:hover){
+    transform: scale(1);
+    transition: 0.4s ease;
+}
+.side:hover{
+    transform: scale(1.2);
+    font-weight: 300 !important; 
+    transition: 0.4s ease;
+}
+
+.marginTopCustom{
+    margin-top: 15rem !important;
+}
+
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 67%;
+}
+
+.navbar-toggler {
+    outline-width: 0 !important; 
+    box-shadow: none !important;
+}
+
+.custom-f{
+    font-size: 10px !important;
+}
+
+
+
+@media (max-width: 576px){
+    .marginButtonCustom{
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
+    
+    .hehe{
+        display:none!important;
+    }
+}
