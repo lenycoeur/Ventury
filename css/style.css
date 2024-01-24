@@ -23,10 +23,20 @@
     border: 1px solid rgba(255, 255, 255, 0.129) !important;
 }
 
-.marginButtonCustom{
-    margin-left: 13rem !important;
-    margin-right: 13rem !important;
-}
+
+
+.carousel-control-prev{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        left: 15% !important;
+    }
+
+    .carousel-control-next{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        right: 15% !important;
+    }
+
 
 .side:not(:hover){
     transform: scale(1);
@@ -47,8 +57,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 67%;
+    height: 100%;
+
 }
+
+ .carousel-indicators{
+        height: 100px;
+    }
 
 .navbar-toggler {
     outline-width: 0 !important; 
@@ -61,13 +76,96 @@
 
 
 
+@media (min-width: 1440px) {
+    .carousel-control-prev{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        left: 15% !important;
+    }
+
+    .carousel-control-next{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        right: 15% !important;
+    }
+
+    .carousel-indicators{
+        height: 170px;
+    }
+    
+    .carousel-caption {
+        height: 60%;
+    }
+}
+
+@media (min-width: 995px) and (max-width: 1439px) {
+    
+    .carousel-indicators{
+        height: 120px;
+    }
+
+    .carousel-caption {
+        height: 60%;
+    }
+}
+@media (min-width:768px) and (max-width: 994px) {
+
+    .carousel-caption .fs-6{
+        font-size: 13px !important;
+    }
+    
+     .carousel-indicators{
+        height: 100px;
+    }
+
+     .carousel-control-prev{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        left: 15% !important;
+    }
+
+    .carousel-caption {
+        height: 60% !important;
+    }
+
+    .carousel-control-next{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        right: 15% !important;
+    }
+
+}
 @media (max-width: 576px){
+    
     .marginButtonCustom{
         margin-left: 0rem !important;
         margin-right: 0rem !important;
     }
-    
-    .hehe{
-        display:none!important;
+
+
+     .carousel-indicators{
+        height: 100px;
     }
-}
+
+    .carousel-caption {
+        height: 100% !important;
+    }
+
+    .carousel-caption p{
+        width: 250px !important;
+    }
+
+    .borderCustom{
+        border-right: 1px solid rgba(255, 255, 255, 0.129) !important;
+    }
+
+    .bord{
+        border-left: 1px solid  rgba(255, 255, 255, 0.129) !important;
+    }
+
+    .border-custom {
+        border-top: 1px solid rgba(255, 255, 255, 0.129) !important;
+    }
+
+}   
+
