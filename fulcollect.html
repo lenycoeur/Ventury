@@ -10,53 +10,48 @@
 </head>
 <body>
   <header>
-    <nav class="navbar fixed-top anim-nav">
-        <div class="container-fluid">
-            <button class="navbar-toggler border border-0 !important focus active " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="text-dark fw-light fs-6">MENU</span>
-              </button>
-                  <a class="navbar-brand text-center fw-normal text-dark" href="#">VENTURY</a>
-                  <a  class="navbar-brand text-dark fw-light fs-6">FEATURE</a>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title mx-3 fs-5 fw-medium" id="offcanvasNavbarLabel">Menu</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mx-3 mt-5">
-                <li class="nav-item">
-                  <a class="nav-link active fs-5 fw-light" aria-current="page" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fs-5 fw-light " href="./fulcollect.html">Full collection</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fs-5 fw-light" href="./ring.html">Ring</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fs-5 fw-light" href="#">Earring</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fs-5 fw-light" href="#">Necklace</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fs-5 fw-light" href="#">Bracelet</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fs-5 fw-light" href="./beauty.html">Beauty</a>
-              </ul>
-            </div>
+    <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler border border-0 !important focus active " type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon d-none"></span>
+          <span class="text-black fw-light fs-6">MENU</span>
+        </button>
+        <a class="navbar-brand text-center fw-normal text-black m-0" href="./index.html">VENTURY</a>
+        <a class="navbar-brand text-black fw-light fs-6 m-0">FEATURE</a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title mx-3 fs-5 fw-medium" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-flex justify-content-center align-items-center ">
+            <ul class="navbar-nav flex-grow-1 mx-3">
+              <li class="nav-item">
+                <a class="nav-link active  fw-lighter " aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fw-lighter " href="./fulcollect.html">Full collection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fw-lighter " href="./ring.html">Ring</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fw-lighter " href="./earring.html">Earring</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fw-lighter " href="./beauty.html">Beauty</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav> 
-</header>
+    </nav>
+  </header>
 
 <main>
     <!-- Contenu principal de la page -->
     <section>
         <div class="container text-center scroll">
-            <div class="row d-flex justify-content-center align-items-center" style="height: 630px;">
+            <div class="row d-flex justify-content-center align-items-center vh-100">
                 <div class="col-10 col-md-8 col-lg-6">
                     <p class="fs-1 fw-semibold scroll">FULL COLLECTION</p>
                     <P class="fw-light text-body-secondary py-4 fs-4 scroll">We offer a selection of object that got pre-configured by us and can be purschased directly. Following you can find the objects
@@ -67,9 +62,9 @@
     </section>
 
     <section>
-        <div class="container scroll" style="height: 1000px;">
+        <div class="container smh" style="height: 600px;">
             <div class="row gy-3">
-              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 position-relative">
+              <div class="col-xl-6 col-xxl-6 position-relative">
                 <div class="img-container scroll">
                   <a href="./ring.html">
                     <img src="./asset/img/newring.jpeg" alt="" srcset="" class="img-fluid" >
@@ -81,7 +76,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 position-relative">
+              <div class="col-xl-6 col-xxl-6 position-relative">
                 <div class="img-container scroll">
                   <a href="./earring.html">
                     <img src="./asset/img/bb.jpeg" alt="" srcset="" class="img-fluid">
@@ -93,33 +88,66 @@
                     </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 position-relative ">
-                <div class="img-container scroll">
-                    <img src="./asset/img/2collier.jpeg" alt="" srcset="" class="img-fluid">
-                    <div class="overlay text-center text-dark">
-                        <p class="hidden-text fs-6 fw-lighter">NECKLACE</p>
-                        <p class="hidden-text fs-5 fw-semibold">KLENOTA GOLD</p>
-                        <p class="hidden-text fs-6 fw-lighter"></p>
-                    </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 position-relative ">
-                <div class="img-container scroll">
-                    <img src="./asset/img/bracer.jpeg" alt="" srcset="" class="img-fluid">
-                    <div class="overlay text-center text-dark">
-                        <p class="hidden-text fs-6 fw-lighter">BRACELET</p>
-                        <p class="hidden-text fs-5 fw-semibold">STERLING ARGENT</p>
-                        <p class="hidden-text fs-6 fw-lighter"></p>
-                    </div>
-                </div>
-              </div>
             </div>
           </div>
     </section>
 
 </main>
 
+<footer>
+  <div class="container-fluid text-center fixed-bottom border bo">
+    <div class="row align-items-center p-3">
+      <div class="col">
+        <button class="btn borderBtn  rounded-5 rounded bg-transparent" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><i class="fa-solid fa-arrow-down"
+            style="color: #000000;"></i></button>
 
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+          aria-labelledby="offcanvasBottomLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body small py-0 ">
+            <div class="container-fluid text-center">
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="fs-6 fw-semibold ">PRODUCTS</p>
+                  <p class="fw-lighter ">Accessories</p>
+                  <P class="fw-lighter ">Beauty</P>
+                  <p class="fw-lighter ">Ful collection</p>
+                </div>
+                <div class="col">
+                  <p class="fs-6 fw-semibold">INFORMATION</p>
+                  <P class="fw-lighter ">Aboout</P>
+                  <p class="fw-lighter ">Contacts</p>
+                  <p class="fw-lighter ">News</p>
+                </div>
+                <div class="col">
+                  <p class="fs-6 fw-semibold"> SERVICE</p>
+                  <P class="fw-lighter ">Privacy Policy</P>
+                  <p class="fw-lighter ">FAQ</p>
+                  <p class="fw-lighter ">Conditions</p>
+                </div>
+                <div class="col">
+                  <p class="fs-6 fw-semibold">SOCIAL MEDIA</p>
+                  <P class="fw-lighter ">Facebook</P>
+                  <p class="fw-lighter ">Instagram</p>
+                  <p class="fw-lighter ">Youtube</p>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col">
+                  <p class="custom-f fw-light">©2023 VENTURY ALL RIGHTS RESERVED</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 

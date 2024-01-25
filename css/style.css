@@ -24,6 +24,9 @@
 }
 
 
+.nav-item  a {
+    font-size: 25px ;
+}
 
 .carousel-control-prev{
         margin-left: 0 !important;
@@ -68,6 +71,11 @@
 .navbar-toggler {
     outline-width: 0 !important; 
     box-shadow: none !important;
+}
+
+.btn-close {
+     outline-width: 0 !important; 
+     box-shadow: none !important;
 }
 
 .custom-f{
