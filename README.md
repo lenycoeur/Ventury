@@ -2,7 +2,7 @@
 
 VENTURY est un site de présentation d'accessoires en ligne. Découvrez une large gamme d'accessoires, des bijoux aux bagues en passant par les colliers.
 
-![Capture d'écran de mon projet](./asset/img/sz.png
+![Capture d'écran de mon projet](./asset/img/sz.png)
 
 
 ## Installation
