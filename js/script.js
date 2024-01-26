@@ -1,9 +1,5 @@
-const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl);
-});
 
-
+/*----- ANIM PROGRESSBAR ------*/
 function updateProgressBar() {
     const container = document.querySelector(".horizontal-scroll");
     const progressBar = document.getElementById("progress");
@@ -19,7 +15,7 @@ function updateProgressBar() {
     updateProgressBar();
   };
   
-
+/*----- Anim NAV SCROLL -----*/
 document.addEventListener('DOMContentLoaded' , function () {
     const nav = document.querySelector('nav');
 
@@ -31,3 +27,31 @@ document.addEventListener('DOMContentLoaded' , function () {
         }
      });
 } );
+
+/* ------- LOGIN ------*/
+
+document.getElementById("login").addEventListener("submit", function (event) {
+  event.preventDefault();
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  const storedFormData = JSON.parse(localStorage.getItem("formData"));
+  const storeEmail = storedFormData ? storedFormData.email : "";
+  const storePassword = storedFormData ? storedFormData.password : "";
+
+  if (email === storeEmail && password === storePassword) {
+    alert("good");
+  } else {
+    alert("not good");
+  }
+});
+
+
+
+
+
+
+
+
+
+
