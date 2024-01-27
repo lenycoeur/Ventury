@@ -4,15 +4,17 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const username = document.getElementById("username").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
     // Enregistrement des données du formulaire dans le localStorage
     localStorage.setItem(
       "formData",
-      JSON.stringify({ username, email, password })
+      JSON.stringify({ email, password })
     );
+
+    const storedFormData = JSON.parse(localStorage.getItem("formData"));
+
 
     // Redirection après avoir enregistré les données
     alert("well done");
