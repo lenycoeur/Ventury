@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded' , function () {
 
 document.getElementById("login").addEventListener("submit", function (event) {
   event.preventDefault();
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+  const email = document.getElementById("useremail").value;
+  const password = document.getElementById("userpassword").value;
 
   const storedFormData = JSON.parse(localStorage.getItem("formData"));
   const storeEmail = storedFormData ? storedFormData.email : "";
