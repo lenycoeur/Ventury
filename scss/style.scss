@@ -134,7 +134,6 @@ $breakpoint: 1440px;
 
     .carousel-caption{
         height: 90%;
-        font-size: 13px !important;
 
         .fs-6 {
             font-size: 13px !important;
@@ -150,5 +149,13 @@ $breakpoint: 1440px;
 @media (max-width: 576px){
     .carousel-caption {
         height: 100%;
+    }
+
+    .borderCustom {
+        @include border($width: 0);
+    }
+
+    .bord {
+        @include border($width: 0);
     }
 }

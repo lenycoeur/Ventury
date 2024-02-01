@@ -71,7 +71,6 @@ form input, button {
 @media (min-width: 577px) and (max-width: 767px) {
   .carousel-caption {
     height: 90%;
-    font-size: 13px !important;
   }
   .carousel-caption .fs-6 {
     font-size: 13px !important;
@@ -80,6 +79,12 @@ form input, button {
 @media (max-width: 576px) {
   .carousel-caption {
     height: 100%;
+  }
+  .borderCustom {
+    border: 0 solid rgba(255, 255, 255, 0.129) !important;
+  }
+  .bord {
+    border: 0 solid rgba(255, 255, 255, 0.129) !important;
   }
 }
 
