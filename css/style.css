@@ -1,201 +1,86 @@
-
-.selector-for-some-widget {
-    box-sizing: content-box;
-  }
-
-/*-------- CSS CUSTOM -------*/
-.navbar{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.129) !important;
+/*-------- IMPORTANT ------*/
+/*
+@mixin margin {
+    margin-left: 0;
+    margin-right: 0;
+}*/
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.129) !important;
 }
 
-.borderCustom{
-    border-right: 1px solid rgba(255, 255, 255, 0.129) !important;
+.borderCustom {
+  border-right: 1px solid rgba(255, 255, 255, 0.129) !important;
 }
 
-.bord{
-    border-left: 1px solid  rgba(255, 255, 255, 0.129) !important;
+.bord {
+  border-left: 1px solid rgba(255, 255, 255, 0.129) !important;
 }
 
 .border-custom {
-    border-top: 1px solid rgba(255, 255, 255, 0.129) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.129) !important;
 }
 
-.borderBtn{
-    border: 1px solid rgba(255, 255, 255, 0.129) !important;
+.borderBtn {
+  border: 1px solid rgba(255, 255, 255, 0.129) !important;
 }
 
-.nav-item  a {
-    font-size: 25px ;
+.nav-item a {
+  font-size: 25px;
 }
 
+/*--- MENUBUTTON ---*/
+.navbar-toggler, .btn-close {
+  outline-width: 0 !important;
+  box-shadow: none !important;
+}
+
+/*---- FormBUTTON ----*/
 .btn-login-custom {
-    border-radius: 0 !important;
+  border-radius: 0 !important;
 }
 
-/* -----FORMBUTTON ----*/
-
-form input {
-    border-radius: 0 !important;
+form input, button {
+  border-radius: 0px !important;
 }
 
-form button{
-    border-radius: 0 !important;
+/*---- TOP ----*/
+.carousel-control-prev {
+  left: 15% !important;
 }
 
-/*------ TOP -------*/
-.carousel-control-prev{
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        left: 15% !important;
-    }
-
-    .carousel-control-next{
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        right: 15% !important;
-    }
-
-
-.side:not(:hover){
-    transform: scale(1);
-    transition: 0.4s ease;
-}
-.side:hover{
-    transform: scale(1.2);
-    font-weight: 300 !important; 
-    transition: 0.4s ease;
-}
-
-.marginTopCustom{
-    margin-top: 15rem !important;
+.carousel-control-next {
+  right: 15% !important;
 }
 
 .carousel-caption {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 60%;
+}
+
+.carousel-indicators {
+  height: 100px;
+}
+
+@media (min-width: 995px) and (max-width: 1439) {
+  .carousel-caption {
+    height: 60%;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .carousel-caption {
+    height: 90%;
+    font-size: 13px !important;
+  }
+  .carousel-caption .fs-6 {
+    font-size: 13px !important;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-caption {
     height: 100%;
-
+  }
 }
 
- .carousel-indicators{
-        height: 100px;
-    }
-
-
-/*--- BUTTON MENU ---*/ 
-.navbar-toggler {
-    outline-width: 0 !important; 
-    box-shadow: none !important;
-}
-
-.btn-close {
-     outline-width: 0 !important; 
-     box-shadow: none !important;
-}
-
-.custom-f{
-    font-size: 10px !important;
-}
-
-
-
-
-
-/*-------- RESPONSIV ---------*/
-/*-------- RESPONSIV ---------*/
-
-@media (min-width: 1440px) {
-    .carousel-control-prev{
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        left: 15% !important;
-    }
-
-    .carousel-control-next{
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        right: 15% !important;
-    }
-
-    .carousel-indicators{
-        height: 170px;
-    }
-    
-    .carousel-caption {
-        height: 60%;
-    }
-}
-
-@media (min-width: 995px) and (max-width: 1439px) {
-    
-    .carousel-indicators{
-        height: 120px;
-    }
-
-    .carousel-caption {
-        height: 60%;
-    }
-}
-@media (min-width:768px) and (max-width: 994px) {
-
-    .carousel-caption .fs-6{
-        font-size: 13px !important;
-    }
-    
-     .carousel-indicators{
-        height: 100px;
-    }
-
-     .carousel-control-prev{
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        left: 15% !important;
-    }
-
-    .carousel-caption {
-        height: 60% !important;
-    }
-
-    .carousel-control-next{
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        right: 15% !important;
-    }
-
-}
-@media (max-width: 576px){
-    
-    .marginButtonCustom{
-        margin-left: 0rem !important;
-        margin-right: 0rem !important;
-    }
-
-
-     .carousel-indicators{
-        height: 100px;
-    }
-
-    .carousel-caption {
-        height: 100% !important;
-    }
-
-    .carousel-caption p{
-        width: 250px !important;
-    }
-
-    .borderCustom{
-        border-right: 1px solid rgba(255, 255, 255, 0.129) !important;
-    }
-
-    .bord{
-        border-left: 1px solid  rgba(255, 255, 255, 0.129) !important;
-    }
-
-    .border-custom {
-        border-top: 1px solid rgba(255, 255, 255, 0.129) !important;
-    }
-
-}   
-
+/*# sourceMappingURL=style.css.map */

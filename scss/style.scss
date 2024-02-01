@@ -1,0 +1,154 @@
+$primary-color: white;
+$secondary-color: black;
+
+@mixin column-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+/*-------- IMPORTANT ------*/
+@mixin important($left: null, $right: null, $outline-width: null, $box-shadow: null){
+    @if $left != null {
+        left: $left !important;
+    }
+    @if $right != null {
+        right: $right !important;
+    }
+    @if $outline-width != null{
+        outline-width: $outline-width !important;
+        box-shadow: $box-shadow !important;
+    }
+}
+
+
+@mixin border($width: 1px, $style: solid, $color: rgba(255,255,255,0.129),  $sides: all) {
+    @if $sides == all {
+        border: $width $style $color !important;
+    }@else{
+        @each $side in $sides {
+            border-#{$side}: $width $style $color !important;
+        }
+    }
+}
+
+@mixin btn-important($isImportant: false){
+    @if $isImportant {
+        border-radius: 0px !important;
+    }@else{
+        border-radius: 5px !important;
+    }
+}
+
+/*
+@mixin margin {
+    margin-left: 0;
+    margin-right: 0;
+}*/
+
+
+
+.navbar {
+    @include border($sides: bottom);
+}
+
+.borderCustom{
+    @include border($sides: right);
+}
+
+.bord {
+    @include border($sides: left);
+}
+
+.border-custom {
+    @include border($sides: top);
+}
+
+.borderBtn {
+    @include border($sides: all);
+}
+
+.nav-item {
+    a {
+        font-size: 25px;
+    }
+}
+
+/*--- MENUBUTTON ---*/
+
+.navbar-toggler, .btn-close {
+    @include important($outline-width: 0, $box-shadow: none);
+}
+
+
+/*---- FormBUTTON ----*/
+.btn-login-custom {
+    border-radius: 0 !important;
+}
+
+form input, button{
+    @include btn-important(true);
+    
+}
+
+
+/*---- TOP ----*/
+
+.carousel-control-prev {
+    @include important($left: 15%);
+}
+.carousel-control-next{
+    @include important($right: 15%);
+}
+
+.carousel-caption {
+    @include column-center();
+    height: 60%;
+}
+
+.carousel-indicators {
+    height: 100px;
+}
+
+
+
+
+//*----- RESPONSIV -----*/
+
+$breakpoint: 1440px;
+
+
+@media (min-width: $breakpoint) {
+    
+    
+}
+
+@media (min-width: 995px) and (max-width: 1439){
+  .carousel-caption{
+    height: 60%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px){
+
+    .carousel-caption{
+        height: 90%;
+        font-size: 13px !important;
+
+        .fs-6 {
+            font-size: 13px !important;
+        }
+
+    }
+        
+    
+
+}
+
+
+@media (max-width: 576px){
+    .carousel-caption {
+        height: 100%;
+    }
+}

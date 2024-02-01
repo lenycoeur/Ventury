@@ -10,21 +10,61 @@
 </head>
 <body>
   <header>
-    <nav class="navbar fixed-top">
+    <nav class="navbar fixed-top scroll ">
       <div class="container-fluid">
         <button class="navbar-toggler border border-0 !important focus active " type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon d-none"></span>
-          <span class="text-black fw-light fs-6">MENU</span>
+          <span class=" fw-light fs-6 text-white">MENU</span>
         </button>
-        <a class="navbar-brand text-center fw-normal text-black m-0" href="./index.html">VENTURY</a>
-        <a class="navbar-brand text-black fw-light fs-6 m-0">FEATURE</a>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="logname">
+          <a class="navbar-brand text-center text-white fw-normal m-0" href="./index.html">VENTURY</a>
+        </div>
+        <div>
+          <button class="btn btn-outline-light btn-login-custom text-white" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Login</button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="d-grid col mb-3 text-center">
+                <h5>LOGIN</h1>
+              </div>
+              <form id="login">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control border-dark" id="useremail" placeholder="name@example.com"
+                    required>
+                  <label for="useremail" class="text-secondary">Email</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control border-dark" id="userpassword" placeholder="Password"
+                    required>
+                  <label for="userpassword" class="text-secondary">Password</label>
+                </div>
+                <div class=" container mt-3">
+                  <div class="row">
+                    <div class="col-8 p-0">
+                      <button type="submit" class="btn btn-dark w-75 p-2 text-white">Log in</button>
+                    </div>
+                    <div class="col-4 p-0 d-flex justify-content-center align-items-center">
+                      <a href="./register.html" class="text-decoration-none text-dark ">Sign Up</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+  
+            </div>
+          </div>
+  
+        </div>
+        <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title mx-3 fs-5 fw-medium" id="offcanvasNavbarLabel">Menu</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body d-flex justify-content-center align-items-center ">
+          <div class="offcanvas-body">
             <ul class="navbar-nav flex-grow-1 mx-3">
               <li class="nav-item">
                 <a class="nav-link active  fw-lighter " aria-current="page" href="./index.html">Home</a>

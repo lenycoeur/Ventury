@@ -1,37 +1,3 @@
 
-.selector-for-some-widget {
-    box-sizing: content-box;
-  }
-  
-.navbar{
-    border-bottom: 1px solid rgba(56, 56, 56, 0.113) !important;
-}
 
-.anim-nav {
-    background-color: rgba(255, 255, 255, 0.514);
- }
-
-.overlay{
-    position: absolute;
-    top: 80%;
-}
-
-.custom-text{
-    font-size: 13px !important;
-}
-
-.span-custom{
-    font-size: 10px !important;
-    text-align: center;
-}
-
-.btn-custom{
-    width: 170px !important;
-    height: 60px !important;
-}
-
-
-.navbar-toggler {
-    outline-width: 0 !important; 
-    box-shadow: none !important;
-}
+/*# sourceMappingURL=ring.css.map */
