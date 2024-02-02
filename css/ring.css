@@ -1,3 +1,40 @@
+nav .font-custom {
+  color: black !important;
+}
+nav .nav-item a {
+  font-size: 25px;
+}
+nav .btn-outline-light {
+  border: 1px solid black !important;
+}
+nav .navbar-toggler, nav .btn-close {
+  outline-width: 0 !important;
+  box-shadow: none !important;
+}
 
+form input, button {
+  border-radius: 0px !important;
+}
+
+.overlay {
+  position: absolute;
+  top: 80%;
+}
+.overlay .custom-text {
+  font-size: 12px;
+}
+.overlay .span-custom {
+  font-size: 10px;
+  text-align: center;
+}
+.overlay .btn-custom {
+  width: 160px;
+  height: 60px;
+}
+
+/*------ FOOTERBUTTON -----*/
+.borderBtn {
+  border: 1px solid rgba(0, 0, 0, 0.129) !important;
+}
 
 /*# sourceMappingURL=ring.css.map */

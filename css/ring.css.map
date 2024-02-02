@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"ring.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/ring.scss"],"names":[],"mappings":"AAiCI;EACI;;AAIA;EACI;;AAIR;EACI;;AAGJ;EAvBI;EACA;;;AA6BR;EAtCQ;;;AA2CR;EACI;EACA;;AAEA;EACI;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;;;AAKR;AACA;EA1EQ","file":"ring.css"}

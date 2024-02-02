@@ -1,0 +1,84 @@
+$primary-color: white;
+$secondary-color: black;
+$bg-color: rgba(255, 255, 255, 0.76);
+
+@mixin border($width: 1px, $style: solid, $color: rgba(0, 0, 0, 0.129),  $sides: all) {
+    @if $sides == all {
+        border: $width $style $color !important;
+    }@else{
+        @each $side in $sides {
+            border-#{$side}: $width $style $color !important;
+        }
+    }
+}
+
+@mixin btn-important($isImportant: false){
+    @if $isImportant {
+        border-radius: 0px !important;
+    }@else{
+        border-radius: 5px !important;
+    }
+}
+
+@mixin important($outline-width: null, $box-shadow: null){
+    @if $outline-width != null{
+        outline-width: $outline-width !important;
+        box-shadow: $box-shadow !important;
+    }
+}
+
+
+
+
+nav {   
+    .font-custom {
+        color: $secondary-color !important;
+    }
+
+    .nav-item {
+        a {
+            font-size: 25px;
+        }
+    }
+
+    .btn-outline-light {
+        border: 1px solid $secondary-color !important;
+    }
+
+    .navbar-toggler, .btn-close {
+    @include important($outline-width: 0, $box-shadow: none);
+    }
+
+}
+
+
+form input, button{
+    @include btn-important(true);
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 80%;
+
+    .custom-text {
+        font-size: 12px;
+    }
+
+    .span-custom {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .btn-custom {
+        width: 160px;
+        height: 60px;
+    }
+
+}
+
+/*------ FOOTERBUTTON -----*/
+.borderBtn {
+    @include border($sides: all);
+    
+}
