@@ -1,3 +1,79 @@
+/*------ NAVBAR -----*/
+nav {
+  transition: 0.3s ease-in-out;
+  background-color: black;
+}
+nav .font-custom {
+  color: white;
+}
 
+.nav-item a {
+  font-size: 25px;
+}
+
+.anim-nav {
+  background-color: rgba(255, 255, 255, 0.76);
+  transition: 0.3s ease-in-out;
+}
+.anim-nav .font-custom {
+  color: black !important;
+}
+.anim-nav .btn-outline-light {
+  border: 1px solid black !important;
+}
+
+/*------- BUTTONNAVBAR ------*/
+.navbar-toggler, .btn-close {
+  outline-width: 0 !important;
+  box-shadow: none !important;
+}
+
+form input, button {
+  border-radius: 0px !important;
+}
+
+/*----- MIDDL -----*/
+.container .img-container {
+  position: relative;
+}
+.container .img-container .overlay {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.container .img-container .overlay .hidden-text {
+  margin: 0;
+}
+.container .img-container img {
+  transition: 0.5s ease-in-out;
+}
+.container .img-container img:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+.container .img-container:hover .overlay {
+  opacity: 1;
+}
+
+/*------ FOOTERBUTTON -----*/
+.borderBtn {
+  border: 1px solid rgba(0, 0, 0, 0.129) !important;
+}
+
+/* ------ @MEDIAQ -----*/
+@media (min-width: 577px) and (max-width: 767px) {
+  .smh {
+    height: 800px !important;
+  }
+}
+@media (max-width: 576px) {
+  .smh {
+    height: 750px !important;
+  }
+}
 
 /*# sourceMappingURL=ful.css.map */

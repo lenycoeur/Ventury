@@ -1,0 +1,133 @@
+$primary-color: white;
+$secondary-color: black;
+$bg-color: rgba(255, 255, 255, 0.76);
+
+
+@mixin border($width: 1px, $style: solid, $color: rgba(0, 0, 0, 0.129),  $sides: all) {
+    @if $sides == all {
+        border: $width $style $color !important;
+    }@else{
+        @each $side in $sides {
+            border-#{$side}: $width $style $color !important;
+        }
+    }
+}
+
+@mixin btn-important($isImportant: false){
+    @if $isImportant {
+        border-radius: 0px !important;
+    }@else{
+        border-radius: 5px !important;
+    }
+}
+
+@mixin important($outline-width: null, $box-shadow: null){
+    @if $outline-width != null{
+        outline-width: $outline-width !important;
+        box-shadow: $box-shadow !important;
+    }
+}
+
+
+@mixin column-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*------ NAVBAR -----*/
+nav {
+    transition: 0.3s ease-in-out;
+    background-color: $secondary-color;
+    .font-custom {
+        color: $primary-color;
+    }
+}
+
+.nav-item {
+    a {
+        font-size: 25px;
+    }
+}
+
+.anim-nav {
+    background-color: $bg-color;
+    transition: 0.3s ease-in-out;
+    .font-custom {
+        color: $secondary-color !important;
+    }
+     .btn-outline-light {
+        border: 1px solid $secondary-color !important;
+    }
+}
+
+
+/*------- BUTTONNAVBAR ------*/
+.navbar-toggler, .btn-close {
+    @include important($outline-width: 0, $box-shadow: none);
+}
+
+form input, button{
+    @include btn-important(true);
+    
+}
+
+
+/*----- MIDDL -----*/
+
+.container {
+
+    .img-container {
+        position: relative;
+
+        .overlay {
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+
+                .hidden-text {
+                    margin:  0;
+                }
+        }
+
+         img {
+        transition: 0.5s ease-in-out;
+        }
+
+        img:hover {
+            cursor: pointer;
+            transform: scale(0.9);
+        }  
+    }
+
+    .img-container:hover .overlay {
+        opacity: 1;
+    }
+}
+
+/*------ FOOTERBUTTON -----*/
+.borderBtn {
+    @include border($sides: all);
+    
+}
+
+/* ------ @MEDIAQ -----*/
+
+@media (min-width: 577px) and (max-width: 767px){
+
+   .smh{
+     height: 800px !important;
+   }     
+
+}
+
+@media (max-width: 576px){
+    
+    .smh{
+        height: 750px !important;
+    }
+}
