@@ -18,6 +18,12 @@ nav .font-custom {
 .anim-nav .font-custom {
   color: black !important;
 }
+.anim-nav .btn:hover {
+  background-color: black;
+}
+.anim-nav .btn:hover span {
+  color: white !important;
+}
 .anim-nav .btn-outline-light {
   border: 1px solid black !important;
 }
