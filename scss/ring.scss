@@ -49,6 +49,14 @@ nav {
     @include important($outline-width: 0, $box-shadow: none);
     }
 
+       .btn:hover  {
+        background-color: $secondary-color ;
+
+        span{
+            color: $primary-color !important;
+        }
+    }
+
 }
 
 
@@ -81,4 +89,18 @@ form input, button{
 .borderBtn {
     @include border($sides: all);
     
+}
+
+
+
+/* ---- MOBILE -----*/
+
+@media (max-width: 576px){
+    
+        .btn-custom {
+            width: 140px !important;
+            height: 50px !important;
+            
+           
+        }
 }

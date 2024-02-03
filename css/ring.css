@@ -11,6 +11,12 @@ nav .navbar-toggler, nav .btn-close {
   outline-width: 0 !important;
   box-shadow: none !important;
 }
+nav .btn:hover {
+  background-color: black;
+}
+nav .btn:hover span {
+  color: white !important;
+}
 
 form input, button {
   border-radius: 0px !important;
@@ -35,6 +41,14 @@ form input, button {
 /*------ FOOTERBUTTON -----*/
 .borderBtn {
   border: 1px solid rgba(0, 0, 0, 0.129) !important;
+}
+
+/* ---- MOBILE -----*/
+@media (max-width: 576px) {
+  .btn-custom {
+    width: 140px !important;
+    height: 50px !important;
+  }
 }
 
 /*# sourceMappingURL=ring.css.map */
