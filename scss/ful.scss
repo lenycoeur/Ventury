@@ -56,7 +56,14 @@ nav {
     .font-custom {
         color: $secondary-color !important;
     }
-     .btn-outline-light {
+    .btn:hover  {
+        background-color: $secondary-color ;
+
+        span{
+            color: $primary-color !important;
+        }
+    }
+    .btn-outline-light {
         border: 1px solid $secondary-color !important;
     }
 }
