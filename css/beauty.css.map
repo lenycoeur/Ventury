@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"beauty.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/beauty.scss"],"names":[],"mappings":"AA8BA;AACA;EACI,kBA/Bc;;;AAmCd;EACI;;;AAIJ;EACI;;;AAKR;AACA;EAxBQ;EACA;;;AA2BR;EApCQ;;;AAyCR;AACA;EACI;;;AAGJ;EACI;EACA;;AAEA;EACI;;;AAIR;EACI;EACA;;;AAIJ;EACI;IACA;IACA;IACA;;EAGA;IACI;IACA;;EAGJ;IACI;IACA;;EAGJ;IACI;IACA;;EAGJ;IACI;IACA","file":"beauty.css"}

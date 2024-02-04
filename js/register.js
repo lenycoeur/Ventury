@@ -7,7 +7,7 @@ document
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    // Enregistrement des données du formulaire dans le localStorage
+    // save data
     localStorage.setItem(
       "formData",
       JSON.stringify({ email, password })
@@ -15,8 +15,6 @@ document
 
     const storedFormData = JSON.parse(localStorage.getItem("formData"));
 
-
-    // Redirection après avoir enregistré les données
     alert("well done");
     window.location.href = "index.html";
   });

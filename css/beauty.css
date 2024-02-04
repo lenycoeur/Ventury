@@ -1,3 +1,66 @@
+/*------ NAVBAR -----*/
+nav {
+  background-color: black;
+}
 
+.nav-item a {
+  font-size: 25px;
+}
+
+.btn-outline-light {
+  border: 1px solid white !important;
+}
+
+/*------- BUTTONNAVBAR ------*/
+.navbar-toggler, .btn-close {
+  outline-width: 0 !important;
+  box-shadow: none !important;
+}
+
+form input, button {
+  border-radius: 0px !important;
+}
+
+/*------ SCROLLX ----*/
+body {
+  overflow-y: hidden;
+}
+
+.horizontal-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.horizontal-scroll ::-webkit-scrollbar {
+  display: none;
+}
+
+.margin-custom {
+  margin-left: 50px !important;
+  margin-right: 50px !important;
+}
+
+@media (max-width: 576px) {
+  .margin-custom {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 100px !important;
+  }
+  .custom-t {
+    font-size: 10px !important;
+    margin-top: 100px;
+  }
+  .custom-b {
+    font-size: 10px;
+    margin-bottom: 120px;
+  }
+  .custom-h {
+    font-size: 13px !important;
+    font-weight: bold !important;
+  }
+  .custom-img {
+    width: 150px !important;
+    height: 330px !important;
+  }
+}
 
 /*# sourceMappingURL=beauty.css.map */

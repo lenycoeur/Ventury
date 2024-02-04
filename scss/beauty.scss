@@ -1,0 +1,105 @@
+$primary-color: white;
+$secondary-color: black;
+
+
+@mixin border($width: 1px, $style: solid, $color: rgba(0, 0, 0, 0.129),  $sides: all) {
+    @if $sides == all {
+        border: $width $style $color !important;
+    }@else{
+        @each $side in $sides {
+            border-#{$side}: $width $style $color !important;
+        }
+    }
+}
+
+@mixin btn-important($isImportant: false){
+    @if $isImportant {
+        border-radius: 0px !important;
+    }@else{
+        border-radius: 5px !important;
+    }
+}
+
+@mixin important($outline-width: null, $box-shadow: null){
+    @if $outline-width != null{
+        outline-width: $outline-width !important;
+        box-shadow: $box-shadow !important;
+    }
+}
+
+
+/*------ NAVBAR -----*/
+nav {
+    background-color: $secondary-color;
+}
+
+.nav-item {
+    a {
+        font-size: 25px;
+    }
+}
+
+    .btn-outline-light {
+        border: 1px solid $primary-color !important;
+    }
+
+
+
+/*------- BUTTONNAVBAR ------*/
+.navbar-toggler, .btn-close {
+    @include important($outline-width: 0, $box-shadow: none);
+}
+
+form input, button{
+    @include btn-important(true);
+    
+}
+
+/*------ SCROLLX ----*/
+body {
+    overflow-y: hidden;
+}
+
+.horizontal-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.margin-custom {
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+}
+
+
+@media (max-width: 576px) {
+    .margin-custom {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 100px !important;
+    }
+
+    .custom-t{
+        font-size: 10px !important;
+        margin-top: 100px;
+    }
+
+    .custom-b{
+        font-size: 10px;
+        margin-bottom: 120px;
+    }
+
+    .custom-h {
+        font-size: 13px !important;
+        font-weight: bold !important;
+    }
+    
+    .custom-img {
+        width: 150px !important;
+        height: 330px !important;
+    }
+  
+}

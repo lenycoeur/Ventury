@@ -29,24 +29,18 @@ $bg-color: rgba(255, 255, 255, 0.76);
 }
 
 
-@mixin column-center{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
 /*------ NAVBAR -----*/
 nav {
     transition: 0.3s ease-in-out;
     background-color: $secondary-color;
     .font-custom {
-        color: $primary-color;
+        color: $primary-color !important;
     }
-}
 
-.nav-item {
-    a {
-        font-size: 25px;
+    .nav-item {
+        a {
+            font-size: 25px;
+        }
     }
 }
 
