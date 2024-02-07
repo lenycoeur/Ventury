@@ -8,4 +8,4 @@ VENTURY est un site de présentation d'accessoires en ligne. Découvrez une larg
 ## Installation
 
 01. Clônez le dépôt : git clone https://github.com/lenycoeur/Ventury.git
-02. ccédez au répertoire du projet : cd Ventury
+02. Accédez au répertoire du projet : cd Ventury
