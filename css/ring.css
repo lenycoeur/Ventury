@@ -2,7 +2,7 @@ nav .font-custom {
   color: black !important;
 }
 nav .nav-item a {
-  font-size: 25px;
+  font-size: 1.5em;
 }
 nav .btn-outline-light {
   border: 1px solid black !important;
@@ -27,10 +27,10 @@ form input, button {
   top: 80%;
 }
 .overlay .custom-text {
-  font-size: 12px;
+  font-size: 0.75em;
 }
 .overlay .span-custom {
-  font-size: 10px;
+  font-size: 0.6em;
   text-align: center;
 }
 .overlay .btn-custom {
