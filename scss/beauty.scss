@@ -35,7 +35,7 @@ nav {
 
 .nav-item {
     a {
-        font-size: 25px;
+        font-size: 1.5em;
     }
 }
 
@@ -70,8 +70,8 @@ body {
 }
 
 .margin-custom {
-    margin-left: 50px !important;
-    margin-right: 50px !important;
+    margin-left: 3.1rem !important;
+    margin-right: 3.1rem !important;
 }
 
 
@@ -79,21 +79,21 @@ body {
     .margin-custom {
     margin-left: 0px !important;
     margin-right: 0px !important;
-    margin-top: 100px !important;
+    margin-top: 6.25rem !important;
     }
 
     .custom-t{
         font-size: 10px !important;
-        margin-top: 100px;
+        margin-top: 6.25rem;
     }
 
     .custom-b{
-        font-size: 10px;
-        margin-bottom: 120px;
+        font-size: 0.6em;
+        margin-bottom: 7.5rem;
     }
 
     .custom-h {
-        font-size: 13px !important;
+        font-size: 0.8em !important;
         font-weight: bold !important;
     }
     
