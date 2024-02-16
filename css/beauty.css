@@ -43,23 +43,26 @@ body {
   .margin-custom {
     margin-left: 0px !important;
     margin-right: 0px !important;
-    margin-top: 6.25rem !important;
+    margin-top: 0px !important;
   }
   .custom-t {
-    font-size: 10px !important;
-    margin-top: 6.25rem;
+    margin-top: 0 !important;
   }
   .custom-b {
-    font-size: 0.6em;
-    margin-bottom: 7.5rem;
+    margin-bottom: 0 !important;
   }
   .custom-h {
-    font-size: 0.8em !important;
-    font-weight: bold !important;
+    font-size: 0.7em !important;
   }
   .custom-img {
     width: 150px !important;
-    height: 330px !important;
+    height: 170px !important;
+  }
+  .fw-bolder {
+    display: none !important;
+  }
+  .custom-p {
+    font-size: 0.5em !important;
   }
 }
 

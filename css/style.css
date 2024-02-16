@@ -77,8 +77,20 @@ form input, button {
   }
 }
 @media (max-width: 576px) {
+  .navbar {
+    background-color: black;
+  }
+  .fixed-bottom {
+    background-color: black;
+  }
   .carousel-caption {
-    height: 100%;
+    height: 95%;
+  }
+  .carousel-caption .fs-6 {
+    font-size: 0.7em !important;
+  }
+  .carousel-caption .fs-2 {
+    font-size: 0.9em !important;
   }
   .borderCustom {
     border: 0 solid rgba(255, 255, 255, 0.129) !important;

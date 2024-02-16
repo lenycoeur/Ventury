@@ -45,9 +45,31 @@ form input, button {
 
 /* ---- MOBILE -----*/
 @media (max-width: 576px) {
-  .btn-custom {
-    width: 140px !important;
-    height: 50px !important;
+  .navbar {
+    background-color: white;
+  }
+  .fixed-bottom {
+    background-color: white;
+  }
+  .overlay {
+    top: 60%;
+  }
+  .overlay .custom-text {
+    font-size: 0.4em !important;
+  }
+  .overlay .fs-6 {
+    font-size: 0.5em !important;
+  }
+  .overlay .btn {
+    width: 70px !important;
+    height: 20px !important;
+    text-align: center !important;
+    padding: 0px 0px 0px 0px !important;
+    line-height: normal;
+    font-size: 0.5em;
+  }
+  .modiftop .fs-4 {
+    font-size: 0.8em !important;
   }
 }
 
