@@ -63,6 +63,12 @@ form input, button {
   height: 100px;
 }
 
+/*---- REGISTER ----*/
+.hh {
+  height: 400px;
+}
+
+/*----- RESPONSIV -----*/
 @media (min-width: 995px) and (max-width: 1439) {
   .carousel-caption {
     height: 60%;

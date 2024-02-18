@@ -111,13 +111,14 @@ form input, button{
     height: 100px;
 }
 
+/*---- REGISTER ----*/
+    .hh{
+        height: 400px;
+    }
 
-
-
-//*----- RESPONSIV -----*/
+/*----- RESPONSIV -----*/
 
 $breakpoint: 1440px;
-
 
 @media (min-width: $breakpoint) {
     

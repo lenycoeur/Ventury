@@ -1,6 +1,7 @@
 
 /*----- ANIM PROGRESSBAR ------*/
 function updateProgressBar() {
+
     const container = document.querySelector(".horizontal-scroll");
     const progressBar = document.getElementById("progress");
   
@@ -14,7 +15,7 @@ function updateProgressBar() {
   document.body.onload = function() {
     updateProgressBar();
   };
-  
+
 /*----- Anim NAV SCROLL -----*/
 document.addEventListener('DOMContentLoaded' , function () {
     const nav = document.querySelector('nav');
