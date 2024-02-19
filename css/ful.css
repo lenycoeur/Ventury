@@ -9,6 +9,9 @@ nav .font-custom {
 nav .nav-item a {
   font-size: 25px;
 }
+nav .btn:hover span {
+  color: black;
+}
 
 .anim-nav {
   background-color: rgba(255, 255, 255, 0.76);

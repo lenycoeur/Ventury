@@ -62,10 +62,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var x = 0,
       y = direction * 200;
     if (elem.classList.contains("reveal_G")) {
-      x = -100;
+      x = -200;
       y = 0;
     } else if (elem.classList.contains("reveal_D")) {
-      x = 100;
+      x = 200;
       y = 0;
     }
     elem.style.transform = "translate(" + x + "px, " + y + "px)";
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
       elem,
       { x: x, y: y, autoAlpha: 0 },
       {
-        duration: 1.35,
+        duration: 1,
         x: 0,
         y: 0,
         autoAlpha: 1,

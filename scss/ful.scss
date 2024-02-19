@@ -42,6 +42,12 @@ nav {
             font-size: 25px;
         }
     }
+
+    .btn:hover {
+        span {
+            color: $secondary-color;
+        }
+    }
 }
 
 .anim-nav {

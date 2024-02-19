@@ -1,7 +1,5 @@
 /*---- REGISTER SCRIPT ----*/
-document
-  .getElementById("register")
-  .addEventListener("submit", function (event) {
+document.getElementById("register").addEventListener("submit", function (event) {
     event.preventDefault();
 
     const email = document.getElementById("email").value;
